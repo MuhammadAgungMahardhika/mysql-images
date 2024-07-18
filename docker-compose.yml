@@ -14,10 +14,10 @@ services:
     ports:
       - "3390:3306"
     networks:
-      - mynetwork
+      - db-network
 
 networks:
-  mynetwork:
+  db-network:
     external: true
 
 volumes:
